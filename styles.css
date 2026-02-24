@@ -1,0 +1,136 @@
+:root {
+  --primary: #7144c8;
+  --primary-dark: #4b2b89;
+  --accent: #f08f2e;
+  --bg: #f7f6fb;
+  --text: #1f1b2d;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, var(--primary), #9e6cff);
+  color: white;
+  padding: 4rem 0;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-soft {
+  background: #efeafb;
+}
+
+.section-intro {
+  margin-top: -0.5rem;
+  color: #48405d;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(40, 20, 80, 0.08);
+}
+
+.card p {
+  margin: 0.35rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.95);
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  border: 1px solid #c9c2de;
+  border-radius: 8px;
+  padding: 0.55rem;
+  font-size: 1rem;
+}
+
+.feedback {
+  min-height: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.footer {
+  background: #2b2141;
+  color: #eee6ff;
+  padding: 1.1rem 0;
+  text-align: center;
+}
