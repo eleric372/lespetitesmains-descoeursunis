@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les petites mains des cœurs unis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <p class="badge">Association créative & solidaire</p>
+        <h1>Les petites mains des cœurs unis</h1>
+        <p>
+          Un espace pour suivre notre journal d'info, s'inscrire aux ateliers d'art
+          et découvrir les créations vendues à prix de revient.
+        </p>
+        <a href="#inscription" class="btn">Je m'inscris</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="journal" class="section container">
+        <h2>Journal d'info des ateliers</h2>
+        <p class="section-intro">
+          Retrouvez les prochains jours d'ateliers artistiques.
+        </p>
+        <div id="news-list" class="card-grid"></div>
+      </section>
+
+      <section id="inscription" class="section section-soft">
+        <div class="container two-columns">
+          <article class="card">
+            <h2>Inscription au site</h2>
+            <form id="site-registration-form" class="form">
+              <label>
+                Nom complet
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                E-mail
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                Téléphone
+                <input type="tel" name="phone" required />
+              </label>
+              <button type="submit" class="btn">Créer mon compte</button>
+            </form>
+            <p id="site-feedback" class="feedback" aria-live="polite"></p>
+          </article>
+
+          <article class="card">
+            <h2>Inscription à un atelier</h2>
+            <form id="workshop-registration-form" class="form">
+              <label>
+                Votre nom
+                <input type="text" name="participantName" required />
+              </label>
+              <label>
+                Choisissez un atelier
+                <select name="workshop" id="workshop-select" required></select>
+              </label>
+              <label>
+                Nombre de places
+                <input type="number" name="seats" min="1" max="5" value="1" required />
+              </label>
+              <button type="submit" class="btn">Réserver ma place</button>
+            </form>
+            <p id="workshop-feedback" class="feedback" aria-live="polite"></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="boutique" class="section container">
+        <h2>Boutique solidaire (prix de revient)</h2>
+        <p class="section-intro">
+          Les créations des ateliers sont proposées au prix de revient, pour soutenir
+          notre projet sans marge commerciale.
+        </p>
+        <div id="shop-list" class="card-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Les petites mains des cœurs unis</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
